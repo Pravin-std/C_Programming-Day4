@@ -1,23 +1,34 @@
 #include <stdio.h>
+
 int main()
 {
-    int n1,n2;
-    int max,lcm;
-    scanf("%d %d", &n1,&n2);
-    if(n1>n2)
+    int i, j;
+
+    for (i = 1; i <= 5; i++)
+        printf("*");
+    printf("\n");
+
+    for (i = 1; i <= 4; i++)
     {
-        max = n1;
-    }else{
-        max = n2;
-    }
-    while(1)
-    {
-        if(max % n1 == 0 && max % n2 == 0)
-        {
-            printf("%d",max);
-            break;
-        }
-        ++max;
+        printf("*");
+        for (j = 1; j <= 3; j++)
+            printf(" ");
+        printf("*\n");
     }
 
+    for (i = 1; i <= 2; i++)
+        printf("*\n");
+
+    for (i = 1; i <= 4; i++)
+    {
+        printf("*");
+        for (j = 1; j <= 3; j++)
+            printf(" ");
+        printf("*\n");
+    }
+
+    for (i = 1; i <= 5; i++)
+        printf("*");
+
+    return 0;
 }
